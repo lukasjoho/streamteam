@@ -35,8 +35,11 @@ type UserMeta = {
 // room. Use a union for multiple events. Must be JSON-serializable.
 // Event types
 type RoomEvent = {
-  type: "TOAST" | "snap";
-  message: any;
+  type: "drag" | "dragEnd";
+  message: {
+    id: string;
+    x: number;
+  };
 };
 
 export const {

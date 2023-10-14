@@ -3,4 +3,10 @@ export interface Item {
   startDate: string;
   endDate: string;
   name: string;
+  swimlaneId: string;
+}
+
+export interface Swimlane {
+  id: string;
+  name: string;
 }
